@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>Description</key>
+	<string>ViewController And View</string>
+	<key>Summary</key>
+	<string>Creates a `ViewController`, separated in .swift file and .xib file, also creates a `View` separated in .swift and .xib file.</string>
+	<key>SortOrder</key>
+	<string>1</string>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Name:</string>
+			<key>Description</key>
+			<string>The base name to be used.</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>MyClass</string>			
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>variableName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Variable:</string>
+			<key>Description</key>
+			<string>The base variable name.</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>myClass</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+	</array>
+</dict>
+</plist>
