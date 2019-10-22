@@ -114,6 +114,18 @@
 			<key>NotPersisted</key>
 			<true/>
 		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>searchable</string>
+			<key>Name</key>
+			<string>Searchable</string>
+			<key>Description</key>
+			<string>Whether to add SearchBar and handle Search Results.</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
 	</array>
 </dict>
 </plist>
