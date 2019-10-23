@@ -89,7 +89,7 @@ extension ___VARIABLE_productName:identifier___TableViewController: ___VARIABLE_
     
 }
 
-extension ___VARIABLE_productName:identifier___TableViewController: UISearchResultsUpdating {
+extension ___FILEBASENAMEASIDENTIFIER___: UISearchResultsUpdating {
 
     func updateSearchResults(for searchController: UISearchController) {
         applyFilters()

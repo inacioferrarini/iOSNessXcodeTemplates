@@ -42,7 +42,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
 
 }
 
-extension ___VARIABLE_productName:identifier___TableViewController: ___VARIABLE_productName:identifier___TableViewDelegate {
+extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName:identifier___TableViewDelegate {
     
     func ___VARIABLE_variableName:identifier___TableView(_ ___VARIABLE_variableName:identifier___TableView: ___VARIABLE_productName:identifier___TableView, didSelect ___VARIABLE_modelVariable:identifier___: ___VARIABLE_modelClass:identifier___) {
         self.delegate?.___VARIABLE_variableName:identifier___TableViewController(self, didSelect: ___VARIABLE_modelVariable:identifier___)

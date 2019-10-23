@@ -89,7 +89,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UIView {
     
 }
 
-extension ___VARIABLE_productName:identifier___TableView: UITableViewDelegate {
+extension ___FILEBASENAMEASIDENTIFIER___: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let ___VARIABLE_modelVariable:identifier___ = dataProvider[indexPath] else { return }
