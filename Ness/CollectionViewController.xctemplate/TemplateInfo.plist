@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>Description</key>
+	<string>ViewController And View</string>
+	<key>Summary</key>
+	<string>Creates a `ViewController`, separated in .swift file and .xib file, also creates a `View` separated in .swift and .xib file.</string>
+	<key>SortOrder</key>
+	<string>1</string>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Name:</string>
+			<key>Description</key>
+			<string>The base name to be used.</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>MyClass</string>			
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>variableName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Variable:</string>
+			<key>Description</key>
+			<string>The base variable name.</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>myClass</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>viewControllerInterfaceType</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>ViewController Interface:</string>
+			<key>Description</key>
+			<string>The type of ViewController Interface to use</string>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Default</key>
+			<string>XIB file</string>
+			<key>Values</key>
+			<array>
+				<string>XIB file</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>dataManagement</string>
+			<key>Name</key>
+			<string>Data Management</string>
+			<key>Description</key>
+			<string>Which Data Management to use.</string>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Default</key>
+			<string>Memory Data</string>
+			<key>Values</key>
+			<array>
+				<string>Memory Data</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>modelClass</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Model Class:</string>
+			<key>Description</key>
+			<string>The model class to be used.</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>Model</string>			
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>modelVariable</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Model Variable:</string>
+			<key>Description</key>
+			<string>The mode variable name.</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Default</key>
+			<string>model</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>searchable</string>
+			<key>Name</key>
+			<string>Searchable</string>
+			<key>Description</key>
+			<string>Whether to add SearchBar and handle Search Results.</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>NotPersisted</key>
+			<true/>
+		</dict>
+	</array>
+</dict>
+</plist>
