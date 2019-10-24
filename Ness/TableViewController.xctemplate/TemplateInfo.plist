@@ -80,6 +80,7 @@
 			<key>Values</key>
 			<array>
 				<string>Memory Data</string>
+				<string>Core Data</string>
 			</array>
 		</dict>
 		<dict>
