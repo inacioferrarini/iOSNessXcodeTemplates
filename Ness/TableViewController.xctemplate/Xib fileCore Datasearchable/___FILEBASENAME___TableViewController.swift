@@ -1,0 +1,94 @@
+import UIKit
+import Ness
+
+protocol ___VARIABLE_productName:identifier___TableViewControllerDelegate: AnyObject {
+    func ___VARIABLE_variableName:identifier___TableViewController(_ ___VARIABLE_variableName:identifier___TableViewController: ___VARIABLE_productName:identifier___TableViewController, didSelect ___VARIABLE_modelVariable:identifier___: ___VARIABLE_modelClass:identifier___)
+    func ___VARIABLE_variableName:identifier___TableViewControllerDidSelectedOption(_ ___VARIABLE_variableName:identifier___TableViewController: ___VARIABLE_productName:identifier___TableViewController)
+}
+
+class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
+
+    // MARK: - Outlets
+    
+    @IBOutlet weak private(set) var ___VARIABLE_variableName:identifier___TableView: ___VARIABLE_productName:identifier___TableView!
+    
+    // MARK: - Properties
+    
+    var coreDataStack: CoreDataStack? {
+        didSet {
+            guard let view = ___VARIABLE_variableName:identifier___TableView else { return }
+            view.coreDataStack = coreDataStack
+        }
+    }
+
+    weak var delegate: ___VARIABLE_productName:identifier___TableViewControllerDelegate?
+    let searchController = UISearchController(searchResultsController: nil)
+
+    // MARK: - Search
+
+    var isSearchBarEmpty: Bool {
+        return searchController.searchBar.text?.isEmpty ?? true
+    }
+
+    // MARK: - Lifecycle
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.setup()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.___VARIABLE_variableName:identifier___TableView.coreDataStack = self.coreDataStack
+    }
+
+    private func setup() {
+        self.title = "___VARIABLE_productName:identifier___TableViewController"
+        self.___VARIABLE_variableName:identifier___TableView.delegate = self
+        self.setupSearchController()
+        self.setupNavigationItem()
+    }
+
+    private func setupSearchController() {
+        self.searchController.searchResultsUpdater = self
+        self.searchController.obscuresBackgroundDuringPresentation = false
+        self.searchController.searchBar.placeholder = "search placeholder"
+        self.definesPresentationContext = true
+    }
+
+    private func setupNavigationItem() {
+        self.navigationItem.hidesSearchBarWhenScrolling = false
+        self.navigationItem.searchController = searchController
+     }
+
+    func applyFilters() {
+        guard self.___VARIABLE_variableName:identifier___TableView != nil else { return }
+        if let searchText = searchController.searchBar.text, searchText.count > 0 {
+            // let predicate = NSPredicate(format: " ... ", searchText)
+            self.___VARIABLE_variableName:identifier___TableView.predicate = nil
+        } else {
+            self.___VARIABLE_variableName:identifier___TableView.predicate = nil
+        }
+    }
+
+}
+
+extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName:identifier___TableViewDelegate {
+    
+    func ___VARIABLE_variableName:identifier___TableView(_ ___VARIABLE_variableName:identifier___TableView: ___VARIABLE_productName:identifier___TableView, didSelect ___VARIABLE_modelVariable:identifier___: ___VARIABLE_modelClass:identifier___) {
+        self.delegate?.___VARIABLE_variableName:identifier___TableViewController(self, didSelect: ___VARIABLE_modelVariable:identifier___)
+    }
+    
+    func ___VARIABLE_variableName:identifier___TableViewDidSelectedOption(_ ___VARIABLE_variableName:identifier___TableView: ___VARIABLE_productName:identifier___TableView) {
+        self.delegate?.___VARIABLE_variableName:identifier___TableViewControllerDidSelectedOption(self)
+    }
+    
+}
+
+extension ___FILEBASENAMEASIDENTIFIER___: UISearchResultsUpdating {
+
+    func updateSearchResults(for searchController: UISearchController) {
+        applyFilters()
+    }
+
+}
