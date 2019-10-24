@@ -29,7 +29,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
 
 }
 
-extension ___VARIABLE_productName:identifier___ViewController: ___VARIABLE_productName:identifier___ViewDelegate {
+extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName:identifier___ViewDelegate {
 
 //    func ___VARIABLE_variableName:identifier___View(_ ___VARIABLE_variableName:identifier___View: ___VARIABLE_productName:identifier___View, didSelect value: Any) {
 //        self.delegate?.___VARIABLE_variableName:identifier___ViewController(self, didSelect: value)

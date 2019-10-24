@@ -41,7 +41,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
 
 }
 
-extension ___VARIABLE_productName:identifier___DetailsViewController: ___VARIABLE_productName:identifier___DetailsViewDelegate {
+extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName:identifier___DetailsViewDelegate {
     
 //    func ___VARIABLE_variableName:identifier___DetailsView(_ ___VARIABLE_variableName:identifier___DetailsView: ___VARIABLE_productName:identifier___DetailsView, didSelect value: Any) {
 //        self.delegate?.___VARIABLE_variableName:identifier___DetailsViewController(self, didSelect: value)
