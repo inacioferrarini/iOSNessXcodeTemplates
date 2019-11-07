@@ -1,4 +1,5 @@
 import UIKit
+import Ness
 
 protocol ___VARIABLE_productName:identifier___DetailsViewDelegate: AnyObject {
     // func ___VARIABLE_variableName:identifier___DetailsView(_ simpleView: ___VARIABLE_productName:identifier___DetailsView, didSelect value: Any)
@@ -71,4 +72,12 @@ class ___FILEBASENAMEASIDENTIFIER___: UIView {
         // descriptionLabel.text = ""
     }
    
+}
+
+extension ___FILEBASENAMEASIDENTIFIER___: Internationalizable {
+
+    var strTitle: String {
+        return string("title")
+    }
+
 }

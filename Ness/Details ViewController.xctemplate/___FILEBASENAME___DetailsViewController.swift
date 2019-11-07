@@ -1,4 +1,5 @@
 import UIKit
+import Ness
 
 protocol ___VARIABLE_productName:identifier___DetailsViewControllerDelegate: AnyObject {
     // func ___VARIABLE_variableName:identifier___DetailsViewController(_ ___VARIABLE_variableName:identifier___DetailsViewController: ___VARIABLE_productName:identifier___DetailsViewController, didSelect value: Any)
@@ -35,8 +36,16 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     }
     
     private func setup() {
-        self.title = "___VARIABLE_productName:identifier___DetailsViewController"
+        self.title = self.strTitle
         self.___VARIABLE_variableName:identifier___DetailsView.delegate = self
+    }
+
+}
+
+extension ___FILEBASENAMEASIDENTIFIER___: Internationalizable {
+
+    var strTitle: String {
+        return string("title")
     }
 
 }
