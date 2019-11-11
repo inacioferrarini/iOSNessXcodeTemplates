@@ -36,8 +36,16 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     }
 
     private func setup() {
-        self.title = "___VARIABLE_productName:identifier___TableViewController"
+        self.title = self.strTitle
         self.___VARIABLE_variableName:identifier___TableView.delegate = self
+    }
+
+}
+
+extension ___FILEBASENAMEASIDENTIFIER___: Internationalizable {
+
+    var strTitle: String {
+        return string("title")
     }
 
 }

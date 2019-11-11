@@ -101,6 +101,14 @@ class ___FILEBASENAMEASIDENTIFIER___: UIView {
 
 }
 
+extension ___FILEBASENAMEASIDENTIFIER___: Internationalizable {
+
+    var strTitle: String {
+        return string("title")
+    }
+
+}
+
 extension ___FILEBASENAMEASIDENTIFIER___: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

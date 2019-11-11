@@ -93,6 +93,14 @@ class ___FILEBASENAMEASIDENTIFIER___: UIView {
     
 }
 
+extension ___FILEBASENAMEASIDENTIFIER___: Internationalizable {
+
+    var strTitle: String {
+        return string("title")
+    }
+
+}
+
 extension ___FILEBASENAMEASIDENTIFIER___: UICollectionViewDelegate {
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

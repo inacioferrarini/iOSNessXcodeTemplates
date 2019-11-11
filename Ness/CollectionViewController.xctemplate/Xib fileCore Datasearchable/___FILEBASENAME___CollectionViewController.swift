@@ -43,7 +43,7 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
     }
     
     private func setup() {
-        self.title = "___VARIABLE_productName:identifier___CollectionViewController"
+        self.title = self.strTitle
         self.___VARIABLE_variableName:identifier___CollectionView.delegate = self
         self.setupSearchController()
         self.setupNavigationItem()
@@ -71,6 +71,14 @@ class ___FILEBASENAMEASIDENTIFIER___: UIViewController {
         }
     }
     
+}
+
+extension ___FILEBASENAMEASIDENTIFIER___: Internationalizable {
+
+    var strTitle: String {
+        return string("title")
+    }
+
 }
 
 extension ___FILEBASENAMEASIDENTIFIER___: ___VARIABLE_productName:identifier___CollectionViewDelegate {

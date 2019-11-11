@@ -10,3 +10,11 @@ class ___FILEBASENAMEASIDENTIFIER___: UICollectionViewCell, Configurable {
     }
 
 }
+
+extension ___FILEBASENAMEASIDENTIFIER___: Internationalizable {
+
+    var strTitle: String {
+        return string("title")
+    }
+
+}

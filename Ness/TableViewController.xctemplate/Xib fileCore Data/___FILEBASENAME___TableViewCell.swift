@@ -14,3 +14,11 @@ class ___FILEBASENAMEASIDENTIFIER___: UITableViewCell, Configurable {
     }
     
 }
+
+extension ___FILEBASENAMEASIDENTIFIER___: Internationalizable {
+
+    var strTitle: String {
+        return string("title")
+    }
+
+}
